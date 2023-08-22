@@ -42,7 +42,7 @@ Aşağıdakileri yap:
 let birinciDeger = 36;
 let ikinciDegeri = 28;
 if(birinciDeger>ikinciDegeri){
-  birinciDeger=22
+  birinciDeger = ikinciDegeri
 }
 console.log(birinciDeger);
 
@@ -84,12 +84,12 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
- let insanYasi = 25;
+
 function kopeginYasi(insanYasi) {
-  let kopekyasi = insanYasi * 7;
-  return kopekyasi;
+  
+  return insanYasi*7;
 }
-console.log(kopeginYasi(insanYasi));
+console.log(kopeginYasi(20));
 
 /* Görev 3 */
 /*
@@ -134,18 +134,18 @@ function oyun(oyuncu, bilgisayar) {
 */
 
 function bilgisayarinSecimi() {
-  let bilgisayarinSecimi = Math.floor(Math.random()*3);
-  if (bilgisayarinSecimi == 0){
+  let secim = Math.floor(Math.random()*3);
+  if (secim === 0){
     return "Taş"
   }
-  else if (bilgisayarinSecimi == 1){
+  else if (secim === 1){
     return "Kağıt"
   }
-  else if (bilgisayarinSecimi == 2) {
+  else if (secim === 2) {
     return "Makas"
   }
 }
-console.log(oyun("Makas", bilgisayarinSecimi));
+console.log(oyun("Makas", bilgisayarinSecimi()));
 
 1
 /* Görev 4 : Metrik Dönüştürücü */
