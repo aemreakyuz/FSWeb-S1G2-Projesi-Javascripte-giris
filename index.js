@@ -250,9 +250,10 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 İPUCU - .includes() methoduna bakabilirsin. (https://www.w3schools.com/jsref/jsref_includes.asp)
 */
 
-function sesliHarfSayaci(arguman) {
- const sesliHarfler = "aeiouAEIOU";
+ const sesliHarfler = ["a", "e", "i", "o" , "u", "A", "E", "I", "O", "U"];
  let sayac = 0;
+
+function sesliHarfSayaci(arguman) {
  for ( let i=0; i<arguman.length;i++){
     if (sesliHarfler.includes(arguman[i])){
       sayac++;
